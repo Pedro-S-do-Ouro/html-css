@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+  <H1>Imagem dinâmica</H1>  
+  <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+  <picture>
+    <source media="(max-width: 700px)" srcset="imagem/img-Pequeno.png" type="image/png">
+    <source media="(max-width: 1000px)" srcset="imagem/img-Medio.png" type="image/png">
+    <img src="imagem/img-Grande.png" alt="Imagem flexivel">
+    <h1>Reproduzindo aúdio</h1>
+  <p>vamos aprender a reproduzir aúdio em HTML</p>
+  <audio preload="metadata" autoplay controls >
+    <source src="midia/What You Gonna Be - NEFFEX.mp3" type="audio/mpeg">
+    <source src="midia/What You Gonna Be - NEFFEX.ogg" type="audio/ogg">
+    <source src="midia/What You Gonna Be - NEFFEX.wav" type="audio/wav">
+  </audio>
+  </picture>
+</body>
+</html>
