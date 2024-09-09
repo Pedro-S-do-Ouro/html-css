@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1
+        {
+            text-align: center;
+        }
+        div
+        {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        } 
+        table
+        {
+            text-align: center;
+            width: 400px;
+            border-collapse: collapse;
+        }
+         th
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: firebrick;
+            padding: 10px
+        }
+        td
+        {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        td.B2
+        {
+            background-color: yellow;
+        }
+        tr.linha1
+        {
+            background-color: gray;
+        }
+       
+    </style>
+</head>
+<body>
+  <h1>Tabela</h1> 
+  <!--
+  HIERARQUIA DE TABELAS (simples)
+  TABLE = tabela
+    TABLE ROW = linha de tabela
+      TABLE HEADER = cabeçalho de TABELA
+        TABLE DATA = dado de tabela
+  --> 
+  <div>
+      <table>
+      <th>Coluna A</th>
+      <th>Coluna B</th>
+      <th>Coluna C</th>
+        <tr class="linha1"><!--table row (linha)1-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr><!--table row (linha)2-->
+            <td>A2</td>
+            <td class="B2">B2</td>
+            <td>C2</td>
+        </tr>
+        <tr><!--table row (linha)3-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr><!--table row (linha)4-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+      </table>
+  </div>
+</body>
+</html>
