@@ -8,19 +8,46 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+
         table
         {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+
         }
+
+        caption
+        {
+          font-size: 1.5em;
+          padding: 5px;
+          font-weight: bold;
+          background-color: lightgray;
+          border: 1px solid black;
+          border-bottom: none;
+        }
+
 tr, td, th {
+    font-weight: ;
     border: 1px solid black;
     padding: 10px;
 }
+
+tbody > tr:nth-child(odd){
+  background-color: rgb(185, 185, 185);
+}
+/*nth-child (odd), (2,3,4... n)*/
 thead, tfoot{
-    background-color: gray;
+    background-color: darkslategray;
     color: white;
 }
+
+thead > tr > th {
+  position: sticky;
+  top: -1px;
+  background-color:darkslategray;
+}
+
     </style>
 </head>
 <body>
@@ -35,10 +62,11 @@ thead, tfoot{
       TR, TD, TH
  -->
       <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
          <tr>
-    <th>Unidades Federativas</th>
-    <th>População</th>
+    <th scope="col">Unidades Federativas</th>
+    <th scope="col" style="width: 100px">População</th>
          </tr>
         </thead>
         <tbody>
@@ -153,7 +181,7 @@ thead, tfoot{
         </tbody>
         <tfoot>
            <tr>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td>214 283 594</td>
            </tr>
         </tfoot>
