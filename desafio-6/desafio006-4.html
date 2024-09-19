@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Col pinter</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif
+        }
+        table{
+            border-collapse:collapse ;
+        }
+        td, th, tr {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .x{
+            background-color: rgb(106, 106, 173);
+        }
+        .y{
+            background-color: rgb(155, 83, 83);
+        }
+        .z{
+            background-color: rgb(104, 168, 147);
+        }
+    </style>
+</head>
+<body>
+   <table>
+    <colgroup>
+        <col class="x">
+        <col class="y">
+        <col class="z">
+    </colgroup>
+    <thead>
+        <tr>
+        <th scope="col">Nome</th>
+         <th scope="col">Idade</th>
+         <th scope="col">Trabalho</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Pedro</td>
+            <td>21</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+         <td>Thiago</td>  
+         <td>20</td>
+         <td>Jogador</td>
+        </tr>
+        <tr>
+          <td>João</td>
+          <td>21</td>
+          <td>Sargento</td>
+        </tr>
+        <tr>
+          <td>Francisco</td>
+          <td>22</td>
+          <td>Cientista</td>
+        </tr>
+    </tbody>
+    </table> 
+</body>
+</html>
