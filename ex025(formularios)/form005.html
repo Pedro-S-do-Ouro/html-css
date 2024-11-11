@@ -5,26 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
-<h1>Exemplo de Formulário</h1>
 <body>
+    <h1>Formulário e select</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-        <fieldset>
-            <legend>Sexo</legend>
-            <input type="radio" name="sex" id="imasc"> <label for="imasc">Masculino</label> <br>
-            <input type="radio" name="sex" id="ifem"> <label for="ifem">Feminino</label> <br>
-        </fieldset>
-<fieldset>
-    <legend>Esportes favoritos</legend>
-    <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
-    <input type="checkbox" name="esnat" id="iesnat" > <label for="iesnat">Natação</label> <br>
-    <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
-    <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tenis</label> <br>
-</fieldset>
+        <p>
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado">
+                <option value="0" selected>Nenhum</option>
+                <optgroup label="Região Suldeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
 
-<p>
-    <input type="submit" value="enviar">
-    <input type="reset" value="limpar">
-</p>
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PB">Paraíba</option>
+                </optgroup>
+            </select>
+        </p>
+        
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="Profissão" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Mecânico</option>
+                <option>Engenheiro</option>
+                <option>Programador</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
     </form>
 </body>
 </html>
